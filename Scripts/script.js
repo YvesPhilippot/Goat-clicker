@@ -251,10 +251,7 @@ $(function () {
     $("#btnReinit").click(function () {
         clearInterval(interval);
         supprimerSauvegarde();
-        nbClick = 0;
-        lblGoats.text('0');
-        retrievedObject = getSauvegardeObject();
-        checkCompetences();
+        location.reload();
     });
 
     btnExport.click(function(){
